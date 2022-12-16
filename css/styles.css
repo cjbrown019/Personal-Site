@@ -11355,6 +11355,7 @@ p.lead {
     flex-direction: column;
     width: 17rem;
     height: 100vh;
+    transition: width 300ms;
   }
   #sideNav .navbar-brand {
     display: flex;
@@ -11364,7 +11365,7 @@ p.lead {
   #sideNav .navbar-brand .img-profile {
     max-width: 10rem;
     max-height: 10rem;
-    border: 0.5rem solid rgba(255, 255, 255, 0.2);
+    border: 0.5rem solid rgba(65, 145, 158, 1);
   }
   #sideNav .navbar-collapse {
     display: flex;
@@ -11390,7 +11391,7 @@ p.lead {
   justify-content: center;
   height: 3.5rem;
   width: 3.5rem;
-  background-color: #495057;
+  background-color: #3D919E;
   color: #fff;
   border-radius: 100%;
   font-size: 1.5rem;
@@ -11432,4 +11433,22 @@ section.resume-section .resume-section-content {
     padding-top: 5rem;
     padding-bottom: 5rem;
   }
+}
+
+
+nav #sideNav :hover{
+  width:30rem;
+}
+
+
+.background-teal{
+  background-color: #3D919E;
+}
+
+.background-dorange{
+  background-color: #994706;
+}
+
+.text-teal{
+  color: #3D919E;
 }
