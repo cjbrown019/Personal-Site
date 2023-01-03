@@ -91,3 +91,10 @@
     background-color:rgba(34, 36, 37,.7);
     color: white;
 }
+
+
+#img-container a img{
+    width: 10vw;
+    height: auto;
+
+}
