@@ -237,11 +237,12 @@ sup {
 }
 
 a {
-  color: #bd5d38;
-  text-decoration: underline;
+  color: #1f74ab;
+  text-decoration: none;
 }
 a:hover {
-  color: #974a2d;
+  color: #11405e;
+  transition: .25s ease-in;
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -11365,7 +11366,7 @@ p.lead {
   #sideNav .navbar-brand .img-profile {
     max-width: 10rem;
     max-height: 10rem;
-    border: 0.5rem solid rgba(65, 145, 158, 1);
+    border: 0.5rem solid rgb(17, 64, 94);
   }
   #sideNav .navbar-collapse {
     display: flex;
@@ -11391,7 +11392,7 @@ p.lead {
   justify-content: center;
   height: 3.5rem;
   width: 3.5rem;
-  background-color: #3D919E;
+  background-color: #1f74ab;
   color: #fff;
   border-radius: 100%;
   font-size: 1.5rem;
@@ -11401,7 +11402,7 @@ p.lead {
   margin-right: 0;
 }
 .social-icons .social-icon:hover {
-  background-color: #bd5d38;
+  background-color: #11405e;
 }
 
 .dev-icons {
@@ -11442,13 +11443,21 @@ nav #sideNav :hover{
 
 
 .background-teal{
-  background-color: #3D919E;
+  background-image: url(/Personal-Site/assets/img/Background-img.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat:no-repeat;
+  background-attachment: fixed;
 }
 
-.background-dorange{
-  background-color: #994706;
+.background-prim{
+  background-color: rgb(70, 174, 226);
 }
 
 .text-teal{
-  color: #3D919E;
+  color: rgb(31, 116, 171);
+}
+
+.text-prim{
+  color: rgb(70, 174, 226);
 }
