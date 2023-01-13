@@ -15,10 +15,11 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
         <link href="css/custom.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.0/css/lightgallery.css">
 
 
     </head>
-    <body id="page-top">
+    <body id="page-top" class="bg-background">
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark background-prim fixed-top" id="sideNav">
             <a class="navbar-brand js-scroll-trigger" href="#page-top">
@@ -40,7 +41,7 @@
         </nav>
         <!-- Page Content-->
         
-        <div class="container-fluid p-0 background-teal">
+        <div class="container-fluid p-0">
             <!-- About-->
             <section class="resume-section " id="about">
                 <div class="resume-section-content shadow-lg p-3 mb-5 bg-body rounded">
@@ -79,7 +80,7 @@
 
                         
                     </div>
-                    <a href="/Personal-Site/assets/img/Corbin-Brown.pdf" download="Corbin_Brown_Resume">Click Here to download Corbin Brown's Resume</a>
+                    <a href="/Personal-Site/assets/img/Corbin-Brown.pdf">Click Here to download Corbin Brown's Resume</a>
                 </div>
             </section>
             <hr class="m-0" />
@@ -89,13 +90,16 @@
                     <h2 class="mb-5 bg-white">Education</h2>
                     <div class="d-flex flex-column flex-md-row justify-content-between p-3 mb-5 bg-body rounded">
                         <div class="flex-grow-1">
-                            <h3 class="mb-2">Centriq Training</h3>
-                            <div class="flex-shrink-1"><span class="text-prim">December 2022 - Current</span></div>
-                        </div>
-                        
-                        <div class="flex-grow-1">
                             <h3 class="mb-2">Eudora High School</h3>
                             <div class="flex-shrink-0"><span class="text-prim">August 2017 - May 2021</span></div>
+                            <img id="Grad-pic" src="/Personal-Site/assets/img/IMG_0783.JPG" alt="Corbin in a graduation outfit">
+                        </div>
+                        <div class="flex-grow-1">
+                            <h3 class="mb-2">Centriq Training</h3>
+                            <div class="flex-shrink-1"><span class="text-prim">December 2022 - Current</span></div>
+                            <div id="dungeon">
+                                <img src="/Personal-Site/assets/img/DungeonSS.JPG" alt="A screen shot of Corbin's Dungeon console game">
+                            </div>
                         </div>
                     </div>
                     
@@ -103,7 +107,7 @@
             </section>
             <hr class="m-0" />
             <!-- Skills-->
-            <section class="resume-section background-teal" id="skills">
+            <section class="resume-section" id="skills">
                 <div class="resume-section-content p-3 mb-5 bg-light rounded">
                     <h2 class="mb-5">Skills</h2>
                     <div class="subheading bg-white rounded text-center">Programming Languages & Tools</div>
@@ -147,23 +151,24 @@
             <hr class="m-0" />
             <!-- Interests-->
             <section class="resume-section" id="interests">
-                <div class="resume-section-content  shadow-lg p-3 mb-5 bg-light rounded">
+                <div class="resume-section-content  shadow-lg p-3 mb-5 bg-light">
                     <h2 class="mb-5">Interests</h2>
                     <p>Apart from the being a web developer, I am a photographer. I take family photos, sunsets, and nature. I spend my free time editing photos. When not editing photos I am exploring deeper into the techniclogical world through media likes Youtube and other social medias.</p>
-                    <div class="container">
-                        <div class="row">
-                            <!-- Pop up gallery -->
-                            <div class="popup-gallery">
-                                <a href="http://farm9.staticflickr.com/8242/8558295633_f34a55c1c6_b.jpg" title="The Cleaner"><img src="http://farm9.staticflickr.com/8242/8558295633_f34a55c1c6_s.jpg" width="75" height="75"></a>
-                                <a href="http://farm9.staticflickr.com/8382/8558295631_0f56c1284f_b.jpg" title="Winter Dance"><img src="http://farm9.staticflickr.com/8382/8558295631_0f56c1284f_s.jpg" width="75" height="75"></a>
-                                <a href="http://farm9.staticflickr.com/8225/8558295635_b1c5ce2794_b.jpg" title="The Uninvited Guest"><img src="http://farm9.staticflickr.com/8225/8558295635_b1c5ce2794_s.jpg" width="75" height="75"></a>
-                                <a href="http://farm9.staticflickr.com/8383/8563475581_df05e9906d_b.jpg" title="Oh no, not again!"><img src="http://farm9.staticflickr.com/8383/8563475581_df05e9906d_s.jpg" width="75" height="75"></a>
-                                <a href="http://farm9.staticflickr.com/8235/8559402846_8b7f82e05d_b.jpg" title="Swan Lake"><img src="http://farm9.staticflickr.com/8235/8559402846_8b7f82e05d_s.jpg" width="75" height="75"></a>
-                                <a href="http://farm9.staticflickr.com/8235/8558295467_e89e95e05a_b.jpg" title="The Shake"><img src="http://farm9.staticflickr.com/8235/8558295467_e89e95e05a_s.jpg" width="75" height="75"></a>
-                                <a href="http://farm9.staticflickr.com/8378/8559402848_9fcd90d20b_b.jpg" title="Who's that, mommy?"><img src="http://farm9.staticflickr.com/8378/8559402848_9fcd90d20b_s.jpg" width="75" height="75"></a>
-                            </div>
+                    <div id="lightgallery" class="gallery">
+                        <a href="/Personal-Site/assets/img/Pumpkin_Decoration.JPG" class="">
+                            <img alt="Pumpkin Decoration" src="/Personal-Site/assets/img/Pumpkin_Decoration.JPG" />
+                        </a>
+                        <a href="/Personal-Site/assets/img/Fireworks.JPG" class="">
+                            <img alt="Fireworks" src="/Personal-Site/assets/img/Fireworks.JPG" />
+                        </a>
+                        <a href="/Personal-Site/assets/img/Red_Panda.JPG" class="">
+                            <img alt="Red Panda" src="/Personal-Site/assets/img/Red_Panda.JPG" />
+                        </a>
+                        <a href="/Personal-Site/assets/img/Silloutte.JPG"  >
+                            <img alt="Sunset Silloutte" id="silloutte" src="/Personal-Site/assets/img/Silloutte.JPG" />
+                        </a>
                     </div>
-                </div>
+                 </div>
             </section>
             <hr class="m-0" />
             <!-- Awards-->
@@ -172,39 +177,52 @@
                         <h2 class="mb-5">Classmates</h2>
                         <div class="row justify-content-evenly">
                             <div class="border-0 card col-sm-6 m-1" style="width: 18rem;">
-                                <img src="/Personal-Site/assets/img/20221002_085057.jpg" class="card-img-top" alt="...">
+                                <div class="links">
+                                    <img src="/Personal-Site/assets/img/20221002_085057.jpg" class="card-img-top classmate-card" alt="A photo of Eugene Cathcart">
+                                    <div class="overlay">
+                                        <strong><a href="http://genecathcart.com/">Personal Site</a></strong>
+                                        <strong><a href="http://linkedin.com/in/gene-cathcart-49848a25a/">Linkedin</a></strong>
+                                    </div>
+                                </div>
                                 <div class="card-body">
-                                    <a href=""><strong>Eugene Cathcart</strong></a>
+                                    <strong>Eugene Cathcart</strong>
                                 </div>
                             </div>
                             <div class="border-0 card col-sm-6 m-1" style="width: 18rem;">
-                                <img src="/Personal-Site/assets/img/fb_img_1564282189202.jpg" class="card-img-top" alt="...">
+                                <div class="links">
+                                    <img src="/Personal-Site/assets/img/fb_img_1564282189202.jpg" class="card-img-top classmate-card" alt="A photo of William Watts">
+                                    <div class="overlay">
+                                        <strong><a href="Williamdwatts.com">Personal Site</a></strong>
+                                        <strong><a href="https://www.linkedin.com/mwlite/in/william-watts-09a57625b">Linkedin</a></strong>
+                                    </div>
+                                </div>
                                 <div class="card-body">
-                                    <a href=""><strong>William Watts</strong></a>
+                                    <strong>William Watts</strong>
                                 </div>
                             </div>
                             <div class="border-0 card col-sm-6 m-1" style="width: 18rem;">
-                                <img src="/Personal-Site/assets/img/20221002_085057.jpg" class="card-img-top" alt="...">
+                                <div class="links">
+
+                                    <img id="Robert" src="/Personal-Site/assets/img/Robert.jpg" class="card-img-top classmate-card" alt="A photo of Robert Eyre">
+                                    <div class="overlay">
+                                        <strong><a href="www.roberteyre.com">Personal Site</a></strong>
+                                        <strong><a href="/">Linkedin</a></strong>
+                                    </div>
+                                </div>
                                 <div class="card-body">
-                                    <a href=""><strong>Eugene Cathcart</strong></a>
+                                    <strong>Robert Eyre</strong>
                                 </div>
                             </div>
                             <div class="border-0 card col-sm-6 m-1" style="width: 18rem;">
-                                <img src="/Personal-Site/assets/img/20221002_085057.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <a href=""><strong>Eugene Cathcart</strong></a>
+                                <div class="links">
+                                    <img src="/Personal-Site/assets/img/Dan'sPic.jpg" class="card-img-top classmate-card" alt="A photo of Dan Ambro">
+                                    <div class="overlay">
+                                        <strong><a href="DanielAmbro.com">Personal Site</a></strong>
+                                        <strong><a href="/">Linkedin</a></strong>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="border-0 card col-sm-6 m-1" style="width: 18rem;">
-                                <img src="/Personal-Site/assets/img/20221002_085057.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <a href=""><strong>Eugene Cathcart</strong></a>
-                                </div>
-                            </div>
-                            <div class="border-0 card col-sm-6 m-1" style="width: 18rem;">
-                                <img src="/Personal-Site/assets/img/20221002_085057.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <a href=""><strong>Eugene Cathcart</strong></a>
+                                    <strong>Dan Ambro</strong>
                                 </div>
                             </div>
                         </div>
@@ -214,7 +232,7 @@
             <section class="resume-section" id="projects">
                 <div class="resume-section-content  shadow-lg p-3 mb-5 bg-light rounded container ">
                     <h2 class="mb-3">Projects</h2>
-                    <table id="project-table" class="table">
+                    <table id="project-table" class="table text-center">
                         <tr>
                             <th scope="col">Name</th>
                             <th scope="col">Type</th>
@@ -223,27 +241,27 @@
                         <tr>
                             <td scope="row">Dungeon Crawler Game</td>
                             <td>C# Console Game</td>
-                            <td><a href="https://github.com/cjbrown019/DungeonApplication">https://github.com/cjbrown019/DungeonApplication</a></td>
+                            <td><a href="https://github.com/cjbrown019/DungeonApplication">Link</a></td>
                         </tr>
                         <tr>
                             <td scope="row">Filler Spot</td>
                             <td>Filler Spot</td>
-                            <td><a href="https://github.com/cjbrown019/DungeonApplication">https://github.com/cjbrown019/DungeonApplication</a></td>
+                            <td><a href="https://github.com/cjbrown019/DungeonApplication">Link</a></td>
                         </tr>
                         <tr>
                             <td scope="row">Filler Spot</td>
                             <td>Filler Spot</td>
-                            <td><a href="https://github.com/cjbrown019/DungeonApplication">https://github.com/cjbrown019/DungeonApplication</a></td>
+                            <td><a href="https://github.com/cjbrown019/DungeonApplication">Link</a></td>
                         </tr>
                         <tr>
                             <td scope="row">Filler Spot</td>
                             <td>Filler Spot</td>
-                            <td><a href="https://github.com/cjbrown019/DungeonApplication">https://github.com/cjbrown019/DungeonApplication</a></td>
+                            <td><a href="https://github.com/cjbrown019/DungeonApplication">Link</a></td>
                         </tr>
                         <tr>
                             <td scope="row">Filler Spot</td>
                             <td>Filler Spot</td>
-                            <td><a href="https://github.com/cjbrown019/DungeonApplication">https://github.com/cjbrown019/DungeonApplication</a></td>
+                            <td><a href="https://github.com/cjbrown019/DungeonApplication">Link</a></td>
                         </tr>
                     </table>
                 </div>
@@ -284,8 +302,13 @@
         <!-- <script src="/Personal-Site/js/jquery.js"></script> -->
 
         <script src="/Personal-Site/js/jquery-3.6.0.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.0/lightgallery.umd.min.js"></script>
 
-
+        <script type="text/javascript">
+            lightGallery(document.getElementById('lightgallery'), {
+                
+            });
+        </script>
 
     </body>
 </html>
